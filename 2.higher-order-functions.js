@@ -4,7 +4,6 @@ function count_calls(fn){
         let result = fn(a, b)
         return result
     }
-    wrapper.count = 0
     return wrapper
 }
 function dummy(){
@@ -14,6 +13,7 @@ dummy = count_calls(dummy)
 
 function repeat(operation, num) {
       // SOLUTION GOES HERE
+      operation.count = 0
       for(let i=0;i<num;i++){
         operation()
       }
@@ -21,3 +21,5 @@ function repeat(operation, num) {
 }
 // module.exports = repeat
 console.log('should work ', repeat(dummy, 4) === 4)
+
+console.log('should work for n=0', repeat(dummy, 0) === 0)
