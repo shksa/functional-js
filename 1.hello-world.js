@@ -6,6 +6,6 @@ function upperCaser(input) {
         return null
       }
 }
-
-console.log('should work for strings', upperCaser('hello') === 'HELLO')
-console.log('should not work for empty strings', upperCaser('') === null)
+module.exports = upperCaser
+// console.log('should work for strings', upperCaser('hello') === 'HELLO')
+// console.log('should not work for empty strings', upperCaser('') === null)
