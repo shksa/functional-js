@@ -24,10 +24,10 @@ let output = {
 	Durian: 3
 }
 
-function compare(result, expected){
-	let len = result.length
-	for (let i=0;i<len;i++){
-		if(result[i] === expected[i]){
+function compare(inputWords, result, expected){
+	let set = new Set(inputWords)
+	for (let item of set){
+		if(result[item] === expected[item]){
 			continue
 		}
 		else{
@@ -38,5 +38,5 @@ function compare(result, expected){
 }
 
 
-console.log('should work', compare(countWords(inputWords), output))
-console.log('should work for zero array', compare(countWords([]), {}))
+console.log('should work', compare(inputWords, countWords(inputWords), output))
+console.log('should work for zero array', compare([], countWords([]), {}))
