@@ -19,3 +19,5 @@ let arr =[1, 2, 3]
 console.log('should work for default case', reduce(arr, add, 0) === 6)
 
 console.log('should work for zero array', reduce([], add, 0) === 0)
+
+console.log('should work for string arrays', reduce(['lionel', 'messi', 'GOAT'], add, '$') === '$lionelmessiGOAT')
