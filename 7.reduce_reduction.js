@@ -1,6 +1,6 @@
 function reduce(arr, fn, previous, idx=0) {
-	if (arr.length === 0)
-		return previous
+	// if (arr.length === 0)
+	// 	return previous
 	if (idx === arr.length)
 		return previous
 	else{

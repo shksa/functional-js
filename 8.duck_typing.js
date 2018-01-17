@@ -22,4 +22,10 @@ function duckCount() {
 	return result
 }
 
-module.exports = duckCount
+// module.exports = duckCount
+let notDuck = Object.create({quack: true})
+let duck = {quack: true}
+let notDuckAlso = {meow: true}
+let empty = {}
+console.log('should work for basic case', duckCount(notDuck, duck, notDuckAlso) === 1)
+console.log('should work for empty case', duckCount(notDuck, duck, notDuckAlso, empty) === 1)
