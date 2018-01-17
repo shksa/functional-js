@@ -1,8 +1,8 @@
 function doubleAll(numbers) {
-      // SOLUTION GOES HERE
-      doubled_numbers = numbers.map(x => x * 2);
-      return doubled_numbers
-    }
+	// SOLUTION GOES HERE
+	let doubled_numbers = numbers.map(x => x * 2)
+	return doubled_numbers
+}
 
 // function compare(result, expected){
 //   let len = result.length

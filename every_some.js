@@ -1,15 +1,15 @@
 function checkUsersValid(goodUsers) {
 
-    function isInGoodUsers(subUser){
-        let result = goodUsers.some(goodUser => goodUser.id === subUser.id)
-        return result
-    }
+	function isInGoodUsers(subUser){
+		let result = goodUsers.some(goodUser => goodUser.id === subUser.id)
+		return result
+	}
 
-    function allUsersValid(submittedUsers) {
-        let result = submittedUsers.every(isInGoodUsers)
-        return result
-    }
-    return allUsersValid
+	function allUsersValid(submittedUsers) {
+		let result = submittedUsers.every(isInGoodUsers)
+		return result
+	}
+	return allUsersValid
 }
 module.exports = checkUsersValid
 // let goodUsers = [
