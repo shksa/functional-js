@@ -1,7 +1,7 @@
 
 function getShortMessages(objs) {
-  result_objs = objs.filter(obj => obj.message.length < 6);
-  result_msgs = result_objs.map(obj => obj.message);
+  let result_objs = objs.filter(obj => obj.message.length < 6);
+  let result_msgs = result_objs.map(obj => obj.message);
   return result_msgs
 }
 
